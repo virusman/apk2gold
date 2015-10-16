@@ -14,7 +14,7 @@ $MPATH/apktool/apktool d -f $1
 mkdir $FOLDER/src
 mv $FOLDER/smali $FOLDER/.smali
 echo "[apk2gold] Creating JAR file with classes..."
-$MPATH/dex2jar-0.0.9.15/d2j-dex2jar.sh $1
+$MPATH/dex2jar/d2j-dex2jar.sh $1
 echo "[apk2gold] Extracting .class files to classes folder..."
 unzip -q ${FOLDER}-dex2jar.jar -d $FOLDER/classes
 echo "[apk2gold] Decompiling to src folder..."
